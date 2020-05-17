@@ -18,7 +18,7 @@ Steps to initiate a project
         `{
     "_version": "0.1.1",
 	"sap.app": {
-		"id": "sap.ui.demo.todo",
+		"id": "conitas.ui.tests.env",
 		"type": "application"
     }
     }`
