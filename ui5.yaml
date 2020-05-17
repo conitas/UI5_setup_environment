@@ -1,0 +1,7 @@
+specVersion: '2.1'
+metadata:
+  name: UI5_setup_environment
+type: application
+framework:
+  name: OpenUI5
+  version: "1.77.2"

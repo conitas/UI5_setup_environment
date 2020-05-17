@@ -1,0 +1,20 @@
+{
+  "name": "UI5_setup_environment",
+  "version": "1.0.0",
+  "description": "Prerquisites - Ubuntu 2020 - nodejs 15 - git    2.25.1 - Visual Studio Code 1.45.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conitas/UI5_setup_environment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conitas/UI5_setup_environment/issues"
+  },
+  "homepage": "https://github.com/conitas/UI5_setup_environment#readme"
+}
