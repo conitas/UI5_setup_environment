@@ -1,6 +1,6 @@
 # UI5_setup_environment
 
-Prerquisites
+## Prerquisites
 - Ubuntu 20.04
 - nodejs 14 (needed to install manually since the packaged nodejs 15 didn't work with ui5)
 - git    2.25.1
@@ -24,3 +24,6 @@ Steps to initiate a project
     }`
         in dir `webapp`
 - issue command `ui5 use openui5@latest` in top level directory (this will change the file `ui5.yaml`)
+
+## Start UI5 development
+- Create index.html file in webapp folder

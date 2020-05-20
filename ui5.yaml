@@ -1,6 +1,8 @@
 specVersion: '2.1'
 metadata:
   name: UI5_setup_environment
+  copyright: |-
+   * (c) Copyright 2020-${currentYear} CONITAS GmbH
 type: application
 framework:
   name: OpenUI5
