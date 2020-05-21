@@ -6,7 +6,7 @@
     <title>UI5@CONITAS</title>
     <script id="sap-ui-bootstrap" src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
         data-sap-ui-theme="sap_belize" data-sap-ui-libs="sap.m" data-sap-ui-compatVersion="edge"
-        data-sap-ui-async="true" data-sap-ui-onInit="module:conitas/ecm/app/index" data-sap-ui-resourceroots='{
+        data-sap-ui-async="true" data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" data-sap-ui-resourceroots='{
         "conitas.ecm.app": "./",
         "conitas.ecm.modules": "./modules",
         "conitas.ecm.views": "./view",
@@ -18,6 +18,8 @@
 </head>
 
 <body class="sapUiBody" id="content">
+    <div data-sap-ui-component data-name="conitas.ecm.app" data-id="container"
+        data-settings='{"id" : "app"}'></div>
 </body>
 
 </html>
