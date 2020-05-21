@@ -5,7 +5,7 @@ sap.ui.define([
 ) {
 	"use strict";
 	new ComponentContainer({
-		name: "conitas.ecm.app.ECMComponent",
+		name: "conitas.ecm.app",
 		settings : {
 			id : "compcontainer"
 		},
