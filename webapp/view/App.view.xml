@@ -9,7 +9,7 @@
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <content>
-                        <mvc:XMLView viewName="conitas.ecm.views.HelloPanel"/>
+                        <mvc:XMLView viewName="conitas.ecm.views.ZdevDocTable"/>
                     </content>
                 </Page>
             </pages>

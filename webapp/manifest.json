@@ -1,43 +1,57 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-	  "id": "conitas.ecm.app",
-	  "type": "application",
-	  "i18n": "i18n/i18n.properties",
-	  "title": "{{appTitle}}",
-	  "description": "{{appDescription}}",
-	  "applicationVersion": {
-		"version": "0.1.1"
-	  }
+		"id": "conitas.ecm.app",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "0.1.1"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "sap/opu/odata/sap/ZMK_TEST_CDS_CDS/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
 	},
 	"sap.ui": {
-	  "technology": "UI5",
-	  "deviceTypes": {
-		  "desktop": true,
-		  "tablet": true,
-		  "phone": true
-	  }
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
 	},
 	"sap.ui5": {
-	  "rootView": {
-		  "viewName": "conitas.ecm.views.App",
-		  "type": "XML",
-		  "async": true,
-		  "id": "app"
-	  },
-	  "dependencies": {
-		"minUI5Version": "1.60",
-		"libs": {
-		  "sap.m": {}
+		"rootView": {
+			"viewName": "conitas.ecm.views.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.60",
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "conitas.ecm.resource.i18n.i18n"
+				}
+			},
+			"": {
+				"dataSource": "mainService",
+				"preload": true
+			}
 		}
-	  },
-	  "models": {
-		"i18n": {
-		  "type": "sap.ui.model.resource.ResourceModel",
-		  "settings": {
-			"bundleName": "conitas.ecm.resource.i18n.i18n"
-		  }
-		}
-	  }
 	}
-  }
+}
